@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:linear-gradient(90deg,#140d10,#481427);
+overflow-x:hidden;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+padding:22px 0;
+background:#140d10;
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.logo{
+
+width:150px;
+
+}
+
+.nav-link{
+
+color:white;
+font-weight:500;
+margin:0 14px;
+transition:.3s;
+
+}
+
+.nav-link:hover,
+.nav-link.active{
+
+color:#ff3d81;
+
+}
+
+.btn-pink{
+
+background:#ff3d81;
+color:white;
+padding:13px 34px;
+border-radius:12px;
+font-weight:600;
+border:none;
+
+}
+
+.btn-pink:hover{
+
+background:#ff1c74;
+color:white;
+
+}
+
+/* HERO */
+
+.hero{
+
+padding:90px 0;
+
+}
+
+.hero-tag{
+
+color:#ff3d81;
+letter-spacing:4px;
+font-size:14px;
+font-weight:700;
+
+}
+
+.hero h1{
+
+font-size:88px;
+font-weight:900;
+line-height:.92;
+color:white;
+margin:25px 0;
+
+}
+
+.hero-text{
+
+color:#d6d6d6;
+font-size:18px;
+line-height:32px;
+max-width:480px;
+
+}
+
+.hero-btn{
+
+display:flex;
+align-items:center;
+gap:25px;
+margin-top:40px;
+
+}
+
+.watch-video{
+
+text-decoration:none;
+color:white;
+font-weight:600;
+
+}
+
+.watch-video:hover{
+
+color:#ff3d81;
+
+}
+
+.hero-img{
+
+max-width:90%;
+display:block;
+margin:auto;
+height: auto;
+cursor: pointer;
+    transition: all .4s ease;
+
+}
+.hero-img:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px #ff3d81 ;
+}
+
+.gallery-link{
+display:block;
+margin-top:20px;
+width:fit-content;
+max-width:200px;
+cursor: pointer;
+    transition: all .4s ease;
+
+
+}
+.gallery-link:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px #ff3d81 ;
+}
+/* PROGRAM */
+
+.program{
+
+padding:100px 0;
+
+}
+
+.section-tag{
+
+color:#ff3d81;
+font-weight:700;
+letter-spacing:4px;
+font-size:20px;
+
+}
+
+.section-title{
+
+font-size:48px;
+color:#fff;
+font-weight:800;
+margin-top:10px;
+
+}
+
+.program-card{
+    background:#201417;
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    min-height:340px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.program-card img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin:0 auto 25px;
+}
+
+.program-card h4{
+    color:#fff;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.program-card p{
+    color:#b8b8b8;
+    line-height:30px;
+    font-size:17px;
+}
+
+.program-card a{
+    margin-top:auto;
+    color:#ff3d81;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.program-card{
+    transition:.4s;
+}
+
+.program-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(255,61,129,.18);
+}
+/*==========================
+      SERVICES
+==========================*/
+
+.services{
+
+padding:110px 0;
+
+}
+
+.service-title{
+
+color:#fff;
+font-weight:800;
+max-width:500px;
+font-size:36px;
+    line-height:1.1;
+
+}
+
+.service-box{
+
+background:#1b1518;
+border:1px solid rgba(255,255,255,.08);
+padding:28px 22px;
+border-radius:18px;
+
+
+}
+
+.service-box h5{
+
+color:#fff;
+font-weight:700;
+margin-bottom:8px;
+
+}
+
+.service-box p{
+
+color:#bfbfbf;
+margin:0;
+font-size:15px;
+
+}
+
+
+    .service-img{
+
+    max-width:100%;
+    border-radius:30px;
+
+    margin-top:80px;
+
+    transform:translateX(50px);
+
+
+height:auto;
+
+    
+
+}
+img{
+        max-width: 100%;
+    display: block;
+}
+
+/*=========================
+      TRAINER SECTION
+==========================*/
+
+.trainer-section{
+    background:#111;
+    padding:100px 0;
+}
+
+.trainer-title{
+    color:#fff;
+    font-size:58px;
+    font-weight:800;
+}
+
+.trainer-card{
+    background:#1a1a1a;
+    border-radius:25px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.trainer-card:hover{
+    transform:translateY(-10px);
+}
+
+.trainer-img{
+    width:100%;
+    display:block;
+}
+
+.trainer-content{
+    padding:20px;
+}
+
+.trainer-content h4{
+    color:#fff;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.trainer-content p{
+    color:#cfcfcf;
+    margin-bottom:18px;
+}
+
+.trainer-social{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.trainer-social a{
+    color:#ff3d81;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.trainer-social a:hover{
+    color:#fff;
+}
+
+@media(max-width:992px){
+
+.trainer-title{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.trainer-title{
+
+font-size:34px;
+
+}
+
+.trainer-social{
+
+justify-content:center;
+
+}
+
+}
+.pricing{
+
+    background:#111;
+}
+
+.pricing-card{
+
+    background:#1b1b1b;
+    border:1px solid #2d2d2d;
+    border-radius:20px;
+    padding:30px;
+    color:white;
+    transition:.4s;
+    height:100%;
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-10px);
+    border-color:#ff2e83;
+}
+
+.pricing-card h5{
+
+    font-size:18px;
+    font-weight:600;
+}
+
+.pricing-card h3{
+
+    font-size:40px;
+    margin:20px 0;
+    font-weight:700;
+}
+
+.pricing-card h3 span{
+
+    font-size:18px;
+    color:#999;
+}
+
+.pricing-card ul{
+
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.pricing-card ul li{
+
+    margin-bottom:12px;
+    color:#d0d0d0;
+}
+
+.btn-pink{
+
+    background:#ff2e83;
+    color:white;
+    border-radius:8px;
+    padding:12px;
+}
+
+.btn-pink:hover{
+
+    background:#ff4c97;
+    color:white;
+}
+
+.pricing-card img{
+
+    width:100%;
+    border-radius:15px;
+}
+
+.testimonial{
+
+    background:#111;
+}
+
+.text-pink{
+
+    color:#ff2d7a;
+    letter-spacing:2px;
+}
+
+.testimonial-card{
+
+    background:#1b1b1b;
+    border:1px solid #2b2b2b;
+    border-radius:25px;
+    padding:35px;
+    color:white;
+    transition:.4s;
+    height:100%;
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#ff2d7a;
+}
+
+.client-img{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    border:3px solid #ff2d7a;
+
+    object-fit:cover;
+
+    margin-bottom:25px;
+}
+
+.testimonial-card h3{
+
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.testimonial-card p{
+
+    color:#c5c5c5;
+    line-height:1.8;
+    font-size:18px;
+}
+.contact{
+
+    background:#1a1a1a;
+}
+
+.text-pink{
+
+    color:#ff2d7a;
+    letter-spacing:2px;
+}
+
+.custom-input{
+
+    background:#0f0f0f;
+    border:none;
+    color:white;
+    border-radius:12px;
+    padding:18px 20px;
+}
+
+.custom-input:focus{
+
+    background:#0f0f0f;
+    color:white;
+
+    border:1px solid #ff2d7a;
+
+    box-shadow:none;
+}
+
+.custom-input::placeholder{
+
+    color:#777;
+}
+
+textarea.custom-input{
+
+    resize:none;
+}
+
+.btn-contact{
+
+    background:#ff2d7a;
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.btn-contact:hover{
+
+    background:#ff4d93;
+    color:white;
+
+    transform:translateY(-3px);
+}
+.modal-content{
+
+    background:#111;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.modal-header{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.modal-title{
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.watch-video{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.watch-video:hover{
+
+    color:#ff3d81;
+
+}
+
+.watch-video i{
+
+    color:#ff3d81;
+
+    font-size:20px;
+
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Program</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pages</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-pink">
+                Sign Up
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- Left -->
+
+            <div class="col-lg-6">
+
+                <span class="hero-tag">
+                    FITNESS CLUB
+                </span>
+
+                <h1>
+                    SWEAT,<br>
+                    SMILE<br>
+                    AND<br>
+                    REPEAT
+                </h1>
+
+                <p class="hero-text">
+
+                    Build your dream body with professional trainers,
+                    modern equipment and personalized workout programs.
+
+                </p>
+
+                <div class="hero-btn">
+
+                    <a href="#" class="btn btn-pink">
+
+                        Get Started
+
+                    </a>
+
+                    <a href="#"
+   class="watch-video"
+   data-bs-toggle="modal"
+   data-bs-target="#gymVideoModal">
+
+    <i class="fa-solid fa-circle-play me-2"></i>
+    Watch Video
+
+</a>
+
+                </div> 
+                        <a href="#" class="gallery-link">
+            <img src="img/gallery1.png" class="img-fluid" alt="">
+        </a>
+
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="col-lg-6 text-center">
+
+                <img src="img/main.png"
+                class="hero-img img-fluid">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="program py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-tag">OUR PROGRAMS</p>
+
+            <h2 class="section-title">
+                Choose Your Best Program
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <img src="img/card1.png" class="img-fluid">
+
+                    <h4>Strength Training</h4>
+
+                    <p>
+                        Build muscle and increase your strength with expert trainers.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <img src="img/card2.png" class="img-fluid">
+
+                    <h4>Cardio Fitness</h4>
+
+                    <p>
+                        Burn calories and improve endurance with effective cardio.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <img src="img/card3.png" class="img-fluid">
+
+                    <h4>Yoga Class</h4>
+
+                    <p>
+                        Improve flexibility and relax your body with yoga sessions.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="program-card">
+
+                    <img src="img/card4.png" class="img-fluid">
+
+                    <h4>Body Building</h4>
+
+                    <p>
+                        Professional bodybuilding program for all fitness levels.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="services py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center gx-5 gy-5">
+
+        
+
+            <!-- Left -->
+            <div class="col-lg-6">
+
+                <span class="section-tag">Our Services</span>
+
+                <h2 class="service-title mt-3 mb-5">
+                    What We Offer To Our Members
+                </h2>
+
+                <div class="service-box mb-4">
+
+                    <h5>Personal Training</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+
+                <div class="service-box mb-4">
+
+                    <h5>Nutrition Planning</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+
+                <div class="service-box mb-4">
+
+                    <h5>Group Classes</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+
+                <a href="#" class="btn btn-pink w-100 py-3">
+                    Service Details
+                </a>
+
+            </div>
+
+            <!-- Right -->
+
+           <div class="col-lg-5 d-flex justify-content-end align-items-end">
+
+    <img src="img/service.png"
+         class="img-fluid service-img"
+         alt="Service">
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= Trainer Section ================= -->
+
+<section class="trainer-section py-5">
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-5">
+
+            <span class="section-tag">
+                Our Trainers
+            </span>
+
+            <h2 class="trainer-title mt-3">
+                Meet Our Expert Trainers
+            </h2>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="trainer-card">
+
+                    <img src="img/coach.png" class="img-fluid trainer-img" alt="Coach">
+
+                    <div class="trainer-content">
+
+                        <h4>John Doe</h4>
+
+                        <p>Strength Training Specialist</p>
+
+                        <div class="trainer-social">
+
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="trainer-card">
+
+                    <img src="img/coach2.png" class="img-fluid trainer-img" alt="Coach">
+
+                    <div class="trainer-content">
+
+                        <h4>Jane Smith</h4>
+
+                        <p>Yoga Instructor</p>
+
+                        <div class="trainer-social">
+
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="trainer-card">
+
+                    <img src="img/coach3.png" class="img-fluid trainer-img" alt="Coach">
+
+                    <div class="trainer-content">
+
+                        <h4>Allexa Johnson</h4>
+
+                        <p>Cardio Training Expert</p>
+
+                        <div class="trainer-social">
+
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="trainer-card">
+
+                    <img src="img/coach4.png" class="img-fluid trainer-img" alt="Coach">
+
+                    <div class="trainer-content">
+
+                        <h4>Mike Wilson</h4>
+
+                        <p>Functional Training Coach</p>
+
+                        <div class="trainer-social">
+
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="pricing py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="text-white fw-bold">Pricing Plans</h2>
+            <p class="text-secondary">Choose Your Perfect Plan</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-card">
+
+                    <h5>Basic Plan</h5>
+
+                    <h3>$29<span>/Month</span></h3>
+
+                    <ul>
+                        <li>Access To Gym Facilities</li>
+                        <li>1 Personal Training Session</li>
+                        <li>Simple Diet Plan</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-pink w-100">
+                        Buy Now
+                    </a>
+
+                    <img src="img/plan1.png"
+                        class="img-fluid mt-4"
+                        alt="">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="pricing-card">
+
+                    <h5>Standard Plan</h5>
+
+                    <h3>$49<span>/Month</span></h3>
+
+                    <ul>
+                        <li>Access To Gym Facilities</li>
+                        <li>3 Personal Training Sessions</li>
+                        <li>Simple Diet Plan</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-pink w-100">
+                        Buy Now
+                    </a>
+
+                    <img src="img/plan2.png"
+                        class="img-fluid mt-4"
+                        alt="">
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="pricing-card">
+
+                    <h5>Premium Plan</h5>
+
+                    <h3>$79<span>/Month</span></h3>
+
+                    <ul>
+                        <li>Access To Gym Facilities</li>
+                        <li>5 Personal Training Sessions</li>
+                        <li>Advanced Diet Plan</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-pink w-100">
+                        Buy Now
+                    </a>
+
+                    <img src="img/plan3.png"
+                        class="img-fluid mt-4"
+                        alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="testimonial py-5">
+
+    <div class="container">
+
+        <div class="mb-5">
+
+            <h6 class="text-uppercase text-pink fw-bold">
+                Testimonials
+            </h6>
+
+            <h2 class="display-4 fw-bold text-white">
+                What Our Members Say
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="testimonial-card">
+
+                    <img src="img/client1.png"
+                        class="client-img"
+                        alt="">
+
+                    <h3>John Doe</h3>
+
+                    <p>
+                        Amazing gym with professional trainers and modern equipment.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="testimonial-card">
+
+                    <img src="img/client2.png"
+                        class="client-img"
+                        alt="">
+
+                    <h3>Sarah Smith</h3>
+
+                    <p>
+                        I achieved my dream body in just a few months with their coaching.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="testimonial-card">
+
+                    <img src="img/client3.png"
+                        class="client-img"
+                        alt="">
+
+                    <h3>Michael Lee</h3>
+
+                    <p>
+                        The environment and energy here are absolutely incredible.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contact py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <h6 class="text-pink text-uppercase fw-bold mb-3">
+                    Contact Us
+                </h6>
+
+                <h2 class="display-4 fw-bold text-white">
+                    Get In Touch With Us
+                </h2>
+
+                <p class="text-secondary mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus, expedita!
+                </p>
+
+                <form>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <input type="text"
+                                class="form-control custom-input"
+                                placeholder="Your Name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="email"
+                                class="form-control custom-input"
+                                placeholder="Your Email">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text"
+                                class="form-control custom-input"
+                                placeholder="Subject">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="tel"
+                                class="form-control custom-input"
+                                placeholder="Your Phone">
+                        </div>
+
+                        <div class="col-12">
+                            <textarea
+                                class="form-control custom-input"
+                                rows="8"
+                                placeholder="Your Message"></textarea>
+                        </div>
+
+                        <div class="col-12 mt-4">
+
+                            <button class="btn btn-contact">
+                                Send Message
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<div class="modal fade"
+     id="gymVideoModal"
+     tabindex="-1"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+
+        <div class="modal-content bg-dark">
+
+            <div class="modal-header border-0">
+
+                <h5 class="modal-title text-white">
+                    Gym Motivation
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body p-0">
+
+                <div class="ratio ratio-16x9">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/ml6cT4AZdqI"
+                        title="Gym Video"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
